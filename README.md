@@ -4,10 +4,11 @@ Create a Debian container from scratch using buildah (as a non-root user).
 
 ## Motivation
 
-A friend mentioned one of his hesitations about containers is that most
-examples seem to depend on downloading binary blobs from public repositories
-with minimal vetting of the binaries, leading to many possible security
-risks, both
+In a conversation earlier this week,
+[Eric Herman](https://github.com/ericherman) mentioned one of his hesitations
+about containers is that most examples seem to depend on downloading binary
+blobs from public repositories with minimal vetting of the binaries, leading to
+many possible security risks, both
 [theoretical](https://www.archive.ece.cmu.edu/~ganger/712.fall02/papers/p761-thompson.pdf)
 and
 [seen in the wild](https://blog.npmjs.org/post/185397814280/plot-to-steal-cryptocurrency-foiled-by-the-npm).
@@ -17,11 +18,11 @@ He pointed out that some of the work being done by projects like
 could help mitigate these risks, but he generally had not seen this approach
 taken in the container world.
 
-I pointed out that there was no need to download binary images to use tools
-such as podman as long as you were willing to build your own base images.
-Realizing I had not done so, however, I decided to try building a Debian
-image using buildah as an example. Although I found many good examples of how
-to build
+I pointed out that, in theory, there was no need to download binary images to
+use tools such as podman as long as you were willing to build your own base
+images.  Realizing I had not done so, however, I decided to try building a
+Debian image using buildah as an example. Although I found many good examples
+of how to build
 [Fedora images from scratch](https://www.server-world.info/en/note?os=Fedora_31&p=buildah&f=2)
 with buildah and some examples of how to build
 [Ubuntu/Debian images for Docker from scratch](https://docs.docker.com/develop/develop-images/baseimages/)
