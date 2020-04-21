@@ -17,7 +17,7 @@ He pointed out that some of the work being done by projects like
 could help mitigate these risks, but he generally had not seen this approach
 taken in the container world.
 
-I replied that there was no need to download binary images to use tools
+I pointed out that there was no need to download binary images to use tools
 such as podman as long as you were willing to build your own base images.
 Realizing I had not done so, however, I decided to try building a Debian
 image using buildah as an example. Although I found many good examples of how
@@ -93,7 +93,7 @@ Trying to mounting the container's filesystem as a non-root user, however,
 will fail inside of the standard user namespace. Again, we could use `sudo`
 to work around this, but the `buildah` team has created a better solution
 with the `buildah unshare` command.  This runs a process in a new user
-namespace, allowing commands like `buildah unshare` to work.
+namespace, allowing commands like `buildah mount` to work.
 
 Putting it all together, we end up with a command that creates a new
 (temporary) user namespace, and then within that namespace mounts the
