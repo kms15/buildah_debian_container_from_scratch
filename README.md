@@ -25,8 +25,8 @@ Debian image using buildah as an example. Although I found many good examples
 of how to build
 [Fedora images from scratch](https://www.server-world.info/en/note?os=Fedora_31&p=buildah&f=2)
 with buildah and some examples of how to build
-[Ubuntu/Debian images for Docker from scratch](https://docs.docker.com/develop/develop-images/baseimages/)
-from scratch, I wasn't able to find a buildah example.  Although the Docker
+[Ubuntu/Debian images for Docker from scratch](https://docs.docker.com/develop/develop-images/baseimages/),
+I wasn't able to find a buildah example.  Although the Docker
 examples could be modified to work with buildah, they required root privileges
 to initialize the container which defeats one of the nice security features in
 podman and buildah (working as a non-root user). It took a few tries to figure
